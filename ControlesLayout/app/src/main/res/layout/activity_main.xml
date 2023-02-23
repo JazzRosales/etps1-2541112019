@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoText="true"
+                android:text="Datos Personales"
+                android:textAlignment="center"
+                android:textColor="#479DA8"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edtNombres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Ingrese su nombre"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/edtApellidos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Ingrese sus apellidos"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/tvGenero"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:text="Genero" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RadioButton
+                    android:id="@+id/rbMasculino"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Masculino" />
+
+                <RadioButton
+                    android:id="@+id/rbFemenino"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Femenino" />
+
+                <RadioButton
+                    android:id="@+id/rbOtros"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Otros" />
+            </RadioGroup>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         int valTabla = Integer.parseInt(edtValor.getText().toString());
 
         int resultados;
-        String resultado = " ";
+        String resultado = "";
         edtResultado.setText(resultado);
 
         for(int i = 0; i<=10; i++){
