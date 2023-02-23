@@ -34,6 +34,43 @@
                 android:textColor="#1278A6"
                 android:textSize="24sp"
                 android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/tvPeso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ingrese su peso"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/edtPeso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/tvAltura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ingrese su atura"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/edtAltura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/edtResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Su resultado"
+                android:inputType="textPersonName" />
+
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
